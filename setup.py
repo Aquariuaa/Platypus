@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
 
 class NoseTestCommand(TestCommand):
@@ -21,7 +21,7 @@ setup(name='Platypus-Opt',
       author_email='dhadka@users.noreply.github.com',
       license="GNU GPL version 3",
       url='https://github.com/whhxp/Platypus',
-      packages=['platypus'],
+      packages=find_packages(),
       install_requires=['six'],
       tests_require=['nose', 'mock'],
       cmdclass={'test': NoseTestCommand},
