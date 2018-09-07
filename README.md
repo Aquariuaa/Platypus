@@ -36,6 +36,11 @@ decision variables is accomplished in Platypus with:
 
 ### Installation
 
+To install the latest development version of Platypus using pip
+
+```
+pip install -e git+https://github.com/whhxp/Platypus.git
+```
 
 To install the latest development version of Platypus, run the following commands:
 
